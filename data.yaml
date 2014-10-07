@@ -1,7 +1,15 @@
 ---
 - name: Zenith Birla
-  type: half-yearly
+  type: non-cumulative
   folio_no: 52357
   initial_amount: 150000
-- name: Don
-  country: US
+  created_at: 14/05/2010
+  period: 36
+  annual_interest_rate: 11.25
+- name: Plethico
+  type: non-cumulative
+  folio_no: 13321
+  initial_amount: 300000
+  created_at: 25/10/2011
+  period: 36
+  annual_interest_rate: 12.5

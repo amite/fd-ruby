@@ -23,22 +23,29 @@
 - Latest password reminders
 - Current account balance - online notebook
 
-### Entities
+## Entities
 - User
 - Investment
 - Payouts/Payments
 
 
-### Attributes
+## Attributes
 - interest (virtual attribute - possible value object)
 
-### API I want]
+## API I want
+- show interest earned this month
 - show all investments - Investment.all
 - show investment name (investment.name)
-- show next payment due (Investment.next_due_payment)
+- show next payment due (Investment.next_payout)
 - show investment amount (investment.initial_deposit)
-- show investment deposit rate (investment.deposit rate)
+- show investment deposit rate (investment.deposit_rate)
 - show interest earned (investment.interest_earned)
+- show cancelled investments (Investment.cancelled)
+- show term for investment (investment.term)
+- show maturity date for investment (investment.due_on)
+- show current status of investment
+- show notifications for upcoming interest payments
+- show investment maturity amount (investment.maturity_amount)
 - show total earnable interest (investment.interest_earnable)
 - show interest due on investment (investment.interest_due)
 - show upcoming interest payments (investment.due_payments)
@@ -46,16 +53,33 @@
 - show all interest payments paid and due (Investment.payouts)
 - split initial deposit into quarterly payouts (investment.split_for_quarterly)
 - split initial deposit into biannual payouts (investment.split_for_biannual)
-- show quaterly income earned (User.quaterly_income)
+- show quarterly income earned (User.quaterly_income)
 - show annual income earned (User.annual income)
 - show expired investments - Investment.expired
 - show investments about to expire - Investment.expiring
+- show investment source - investment.source
+- show contact for investment - investment.source.name
+- mark investment as cancelled
+- mark investment as under_investigation
+- sort investments by term
+- mark payment as received
+- mark payment as deposited
+- log entry for cheque
+- show status for payment
 
 
 
+## Worker Objects
+- PaymentTracker
+- PaymentNotifier
 
 
 
+### How to calculate interest
 
+#### For Quarterly interest [ref](http://blog.kbsbng.com/2011/01/maturity-amount-calculation-for-fixed.html)
+```
+Maturity amount = Principal * ( 1 + (Rate of interest)/4 ) ^ (Period * 4)
+```
 
 
