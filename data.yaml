@@ -1,0 +1,7 @@
+---
+- name: Zenith Birla
+  type: half-yearly
+  folio_no: 52357
+  initial_amount: 150000
+- name: Don
+  country: US

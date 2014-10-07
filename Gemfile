@@ -7,3 +7,5 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'shoulda-matchers', require: false
 end
+
+gem 'virtus'

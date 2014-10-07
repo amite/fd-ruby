@@ -1,4 +1,4 @@
-
+require 'yaml'
 
 class Reader
   def initialize
@@ -6,4 +6,6 @@ class Reader
   end
 end
 
-fd = File.read('data.yaml')
+profile = YAML.load_file('data.yaml')
+
+p profile[0]['initial_amount']

@@ -22,3 +22,40 @@
 - Company profile and current status
 - Latest password reminders
 - Current account balance - online notebook
+
+### Entities
+- User
+- Investment
+- Payouts/Payments
+
+
+### Attributes
+- interest (virtual attribute - possible value object)
+
+### API I want]
+- show all investments - Investment.all
+- show investment name (investment.name)
+- show next payment due (Investment.next_due_payment)
+- show investment amount (investment.initial_deposit)
+- show investment deposit rate (investment.deposit rate)
+- show interest earned (investment.interest_earned)
+- show total earnable interest (investment.interest_earnable)
+- show interest due on investment (investment.interest_due)
+- show upcoming interest payments (investment.due_payments)
+- show interest deposited (investment.deposited_payments)
+- show all interest payments paid and due (Investment.payouts)
+- split initial deposit into quarterly payouts (investment.split_for_quarterly)
+- split initial deposit into biannual payouts (investment.split_for_biannual)
+- show quaterly income earned (User.quaterly_income)
+- show annual income earned (User.annual income)
+- show expired investments - Investment.expired
+- show investments about to expire - Investment.expiring
+
+
+
+
+
+
+
+
+
