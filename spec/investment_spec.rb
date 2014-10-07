@@ -1,7 +1,5 @@
 require "spec_helper"
 
 describe Investment do
-  it "exists" do
-
-  end
+  it { is_expected.not_to eq(nil) }
 end

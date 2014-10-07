@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'factory_girl'
+group :development, :test do
+  gem 'rspec'
+  gem 'factory_girl'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'shoulda-matchers', require: false
+end
