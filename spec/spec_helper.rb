@@ -1,5 +1,6 @@
 require "rspec"
 require "factory_girl"
+require "money"
 
 require_relative '../lib/investment'
 
