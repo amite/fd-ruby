@@ -1,3 +1,8 @@
+## TODO List
+
+- Write a DSL for building investments
+- Use virtus and active_model
+
 #### What problems do we have?
 
 
